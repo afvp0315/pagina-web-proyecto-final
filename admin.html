@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heroes</title>
+  <link rel="stylesheet" href="./style/admin.css">
+  <meta name="keywords" content="Heroes, Gestion listas, Gestion heroes">
+  <meta name="description" content="Aqui vas a encontrar una aplicacion que se conecta a una API personalizada, para realizar operaciones CRUD">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Heroes</h1>
+    <div id="hero-list" class="hero-list">
+
+    </div>
+    <button id="add-hero-btn">Agregar Nuevo Heroe</button>
+  </div>
+
+
+
+
+  <div id="hero-form-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="form-title">
+        Agregar Heroe
+      </h2>
+      <form id="hero-form">
+      <input type="hidden" id="hero-id">
+      <label for="hero-name">Nombre</label>
+      <input type="text" id="hero-name" required>
+      <label for="hero-image">Imagen URL:</label>
+      <input type="text" id="hero-image" required>
+      <label for="product_price">precio</label>
+      <input type="number" id="product_price" required>
+      <label for="product_description">descripcion</label>
+      <input type="text" id="product_description" required>
+      <button type="submit">Guardar</button>
+      </form>
+    </div>
+  </div>
+
+
+
+    <script src="js/api.js"></script>
+    <script src="./js/admin.js"></script>
+
+</body>
+
+</html>

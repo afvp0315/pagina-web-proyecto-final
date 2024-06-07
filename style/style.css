@@ -95,11 +95,7 @@ width:100%;
     
 }
 
-.image{
-    
-    width:25% ;
-    
-}
+
 
 .product-card {
     display: flex;
@@ -120,8 +116,22 @@ border: solid;
 margin-top: 5px;
 }
 
-.buy-buttons{
-    align-self: center;
+.buttons{
+    display: flex;
+    justify-content:space-around;
+}
+
+button{
+    background-color: #14a71d;
+    text-align: center;
+    height: 30px;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+}
+
+button:hover{
+    background-color:#6441a4;
 }
 
 .text-product{
@@ -137,7 +147,7 @@ margin-top: 5px;
 }
 
 .formulario{
-    display: flex;
+/*display: none;*/
     flex-direction: column;
     align-content: center;
     border: solid;
@@ -145,7 +155,7 @@ margin-top: 5px;
     gap: 5px;
     width:50%;
     height:50%;
-    
+    border-radius: 15px;
 }
 
 form{
@@ -153,6 +163,7 @@ form{
     flex-direction: column;
     justify-content: center;
     gap: 5px;
+    border-radius: 15px;
     }
 
 
@@ -171,4 +182,42 @@ footer{
 .Kick{
     display: flex;
 }
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
